@@ -57,15 +57,15 @@
             <div class="linha3">
                 <!-- DUAL CORE -->
                 <div class="celulavazia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
-                <div class="celulacheia"></div>
+                <div id="d" class="celulacheia"></div>
+                <div id="u" class="celulacheia"></div>
+                <div id="a" class="celulacheia"></div>
+                <div id="l" class="celulacheia"></div>
+                <div id="traco" class="celulacheia"></div>
+                <div id="c" class="celulacheia"></div>
+                <div id="o" class="celulacheia"></div>
+                <div id="r" class="celulacheia"></div>
+                <div id="e" class="celulacheia"></div>
                 <div class="celulavazia"></div>
                 <div class="celulacheia"></div>
                 <div class="celulavazia"></div>
@@ -328,17 +328,31 @@
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
             </div>
-            <div class="painel">
+            <div class="painel" id="painel1">
                 <ul>
                     <li>
                         <a href="#" contenteditable>
                             <h2>Dica #1</h2>
                             <p>É a parte de um SO, que realiza as instruções de um programa de computador,
-                                para executar a aritmética básica, lógica, e a entrada e saída de dados.</p>
+                                para executar a aritmética básica, lógica, e a entrada e saída de dados.
+                            </p>
                         </a>
                     </li>
                 </ul>
-                <input type="text" placeholder="Insira aqui">
+                <input id="resposta1" type="text" placeholder="Insira aqui">
+                <button onclick="verificar()">Responder</button>
+            </div>
+            <div class="painel" id="painel2" style="display: none;">
+                <ul>
+                    <li>
+                        <a href="#" contenteditable>
+                            <h2>Dica #2</h2>
+                            <p>são usados para armazenar as informações  necessárias para a execução das instruções pela CPU
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <input id="resposta2" type="text" placeholder="Insira aqui">
                 <button onclick="verificar()">Responder</button>
             </div>
         </div>
@@ -348,4 +362,23 @@
 
 </html>
 <script>
+    function verificar() {
+       var respostapalavra1 = resposta1.value
+        if (respostapalavra1 == 'dualcore') {
+            d.innerHTML = "<b>D</b>"
+            u.innerHTML = "<b>U</b>"
+            a.innerHTML = "<b>A</b>"
+            l.innerHTML = "<b>L</b>"
+            traco.innerHTML = "<b>-</b>"
+            c.innerHTML = "<b>C</b>"
+            o.innerHTML = "<b>O</b>"
+            r.innerHTML = "<b>R</b>"
+            e.innerHTML = "<b>E</b>"
+            painel1.style.display = "none"
+            painel2.style.display = "block"
+
+        } else {
+            alert ("Resposta Incorreta")
+        }
+    }
 </script>
