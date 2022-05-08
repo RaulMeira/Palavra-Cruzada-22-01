@@ -4,7 +4,7 @@
 }
 
 .container {
-    background-color: #008080;
+    background: linear-gradient(to bottom, #4b79a1, #283e51);;
     height: 150vh;
     width: 100%;
     padding-top: 100px;
@@ -22,6 +22,11 @@
     border-radius: 20px;
 }
 
+.card b {
+padding: 8px;
+margin-top: 1cm;
+}
+
 .celulavazia {
     background-color: #333333;
     height: 30px;
@@ -32,6 +37,7 @@
 }
 
 .celulacheia {
+
     background-color: rgb(255, 255, 255);
     height: 30px;
     width: 30px;
@@ -56,6 +62,8 @@
     box-shadow: inset 20px 20px 17px #cccccc,
         inset -20px -20px 17px #f4f4f4;
 }
+
+
 h2 {
     font-weight: bold;
     font-size: 2rem;
@@ -80,7 +88,7 @@ h2 {
     height:10em;
     width:10em;
     padding:1em;
-    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.463);
     transform: rotate(-6deg);
     transition: transform .15s linear;
   }
