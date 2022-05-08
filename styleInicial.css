@@ -1,4 +1,4 @@
-body{
+body {
     background-color: aqua;
     margin: 0;
 }
@@ -8,54 +8,125 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-   
-}
-
-.conteiner h1{
-font-size: 10vh;
-display: flex;
-justify-content: center;
 
 }
-.card .titulo{
 
-font-size: 6vh;
-display: flex;
-justify-content: center;
-/* margin-left: 10vw; */
-}
-
-.pega-card{
+.conteiner h1 {
+    font-size: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
 }
-.conteiner .card{
+
+.card .titulo {
+
+    font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 10vw; */
+}
+
+.pega-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50vw;
     background-color: blueviolet;
-    height: 50vh;
+    height: 40vh;
     padding: 2vh 2vw;
     border: 1vh black solid;
     border-radius: 5vh;
 }
-.card .escrita{
+
+.card .escrita {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 7vh;
 }
-.escrita p{
+
+.escrita p {
     font-size: 4vh;
     margin-bottom: 2vh;
 }
 
-.barra{
+.barra {
     height: 25vh;
     width: 0.25vw;
     background-color: black;
 }
-.start{
+
+.nome,
+.email,
+.RA {
+    font-size: 3vh;
+}
+
+.start {
+    width: 30vw;
+    height: 40vh;
+    padding: 2vh 2vw;
+    background-color: blue;
+    margin-left: 5vw;
+    border: 1vh black solid;
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.start p {
+    font-size: 6.5vh;
+}
+
+.button {
+    border-radius: 1vh;
+    background-color: rgb(10, 10, 12);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 5vh;
+    padding: 3vh;
+    width: 20vw;
+    height: 13vh;
+    cursor: pointer;
+    margin: 1vh;
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -8vh;
+    transition: 0.8s;
+}
+
+.button:hover span {
+    padding-right: 3vh;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer{
     
 }
