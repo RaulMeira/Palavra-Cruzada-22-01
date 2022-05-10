@@ -107,7 +107,7 @@ h2 {
   }
 
   button {
-      margin-top: 70px;
+      margin-top: 15vh;
       width: 30%;
       height: 20px;
       background-color: transparent;
@@ -116,4 +116,8 @@ h2 {
       border-radius: 4px;
       
     }
-
+    #botao1, #botao2, #botao3, #botao4, #botao5, #botao6, #botao7, #botao8, #botao9, #botao10, #botao11, #botao12, #botao13, #botao14, #botao15 { 
+      display: none;
+      margin: auto;
+  
+  }
