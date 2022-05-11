@@ -88,9 +88,9 @@
                 <div class="celulavazia"></div>
                 <div id="e_Regist" class="celulacheia"></div>
                 <div class="celulavazia"></div>
-                <div id="r_ram" class="celulacheia"></div>
-                <div id="a_ram_quad" class="celulacheia"></div>
-                <div id="m_ram" class="celulacheia"></div>
+                <div id="r_Ram_ram" class="celulacheia"></div>
+                <div id="a_Ram_quad" class="celulacheia"></div>
+                <div id="m_Ram_ram" class="celulacheia"></div>
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
@@ -560,7 +560,7 @@
         if (resposta == 'quad core') {
             q_quad.innerHTML = "<b>Q</b>"
             u_quad.innerHTML =  "<b>U</b>"
-            a_ram_quad.innerHTML =  "<b>A</b>"
+            a_Ram_quad.innerHTML =  "<b>A</b>"
             d_quad.innerHTML =  "<b>D</b>"
             traco_quadcore.innerHTML =  "<b>-</b>"
             c_quadCore_ccpu.innerHTML =  "<b>C</b>"
@@ -582,11 +582,12 @@
     function verificar9() {
         var resposta = resposta_input.value
         if (resposta == 'ram') {
-            r_ram.innerHTML =  "<b>R</b>"
-            a_ram_quad.innerHTML =  "<b>A</b>"
-            m_ram.innerHTML =  "<b>M</b>"
+            r_Ram_ram.innerHTML =  "<b>R</b>"
+            a_Ram_quad.innerHTML =  "<b>A</b>"
+            m_Ram_ram.innerHTML =  "<b>M</b>"
             botao9.style.display = "none"
             botao10.style.display = "block"
+
             dica.innerHTML = ``
             cnt += 1
             cont.innerHTML = `${cnt}`
