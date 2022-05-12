@@ -62,7 +62,7 @@
                 <div id="u_dual" class="celulacheia"></div>
                 <div id="a_dual" class="celulacheia"></div>
                 <div id="l_dual" class="celulacheia"></div>
-                <div id="traco_dual" class="celulacheia"></div>
+                <div id="traco_dual" class="celulacheia"> <b>-</b> </div>
                 <div id="c_dual" class="celulacheia"></div>
                 <div id="o_dual" class="celulacheia"></div>
                 <div id="r_dual_regist" class="celulacheia"></div>
@@ -129,9 +129,9 @@
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
                 <div id="i_regist_i5" class="celulacheia"></div>
-                <div id="5_i5" class="celulacheia"></div>
+                <div id="i_i5" class="celulacheia"></div>
                 <div class="celulavazia"></div>
-                <div id="traco_quadcore" class="celulacheia"></div>
+                <div id="traco_quadcore" class="celulacheia"> <b>-</b> </div>
                 <div class="celulavazia"></div>
                 <div id="e_eprom" class="celulacheia"></div>
                 <div class="celulavazia"></div>
@@ -146,7 +146,7 @@
                 <div id="a_data" class="celulacheia"></div>
                 <div id="t_data" class="celulacheia"></div>
                 <div id="a_ula_data" class="celulacheia"></div>
-                <div id="traco_data" class="celulacheia"></div>
+                <div id="traco_data" class="celulacheia">  <b>-</b> </div>
                 <div id="b_dataBus" class="celulacheia"></div>
                 <div id="u_dataBus" class="celulacheia"></div>
                 <div id="s_dataBus_regist" class="celulacheia"></div>
@@ -154,8 +154,8 @@
                 <div class="celulavazia"></div>
                 <div id="c_quadCore_ccpu" class="celulacheia"></div>
                 <div id="c_ccpu" class="celulacheia"></div>
-                <div id="p_ccpu_prom" class="celulacheia"></div>
-                <div id="u_ccpu" class="celulacheia"></div>
+                <div id="p_ccpu_eprom" class="celulacheia"></div>
+                <div id="u_Ccpu" class="celulacheia"></div>
                 <div class="celulavazia"></div>
                 <div id="f_flash" class="celulacheia"></div>
                 <div class="celulavazia"></div>
@@ -216,12 +216,12 @@
                 <div id="traco_memoria" class="celulacheia"></div>
                 <div id="d_memDeMassa" class="celulacheia"></div>
                 <div id="e_memDeMassa_quadCore" class="celulacheia"></div>
-                <div id="traco_memDeMassa" class="celulacheia"></div>
+                <div id="traco_memDeMassa" class="celulacheia">  <b>-</b>  </div>
                 <div id="m_massa_eprom" class="celulacheia"></div>
                 <div id="a_massa" class="celulacheia"></div>
                 <div id="s_massa" class="celulacheia"></div>
-                <div id="s_massa" class="celulacheia"></div>
-                <div id="a_massa_flash" class="celulacheia"></div>
+                <div id="s_massa2_flash" class="celulacheia"></div>
+                <div id="a_massa2" class="celulacheia"></div>
                 <div class="celulavazia"></div>
             </div>
             <div class="linha10">
@@ -273,13 +273,13 @@
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
-                <div class="celulavazia"></div>
                 <div id="a_adress" class="celulacheia"></div>
-                <div id="r_adress_regist" class="celulacheia"></div>
                 <div id="d_adress" class="celulacheia"></div>
+                <div id="r_adress_regist" class="celulacheia"></div>
                 <div id="e_adress" class="celulacheia"></div>
                 <div id="s_adress" class="celulacheia"></div>
-                <div id="s_adress" class="celulacheia"></div>
+                <div id="s_adress2" class="celulacheia"></div>
+                <div id="traco_adress" class="celulacheia"> <b>-</b>  </div>
                 <div id="b_adressBus" class="celulacheia"></div>
                 <div id="u_adressBus" class="celulacheia"></div>
                 <div id="s_adressBus" class="celulacheia"></div>
@@ -349,7 +349,7 @@
                 <button onclick="verificar5()" id="botao5">Responder</button>
                 <button onclick="verificar6()" id="botao6">Responder</button>
                 <button onclick="verificar7()" id="botao7">Responder</button>
-                <button onclick="verificar8()" id="botao8">Responder</button>
+                <button onclick="verificar8()" id="botao8"> Responder</button>
                 <button onclick="verificar9()" id="botao9">Responder</button>
                 <button onclick="verificar10()" id="botao10">Responder</button>
                 <button onclick="verificar11()" id="botao11">Responder</button>
@@ -397,7 +397,7 @@
             dica.innerHTML = `São usados para armazenar as informações  necessárias para a execução das instruções pela CPU`
             cnt += 1
             cont.innerHTML = `${cnt}`
-            resposta1.innerHTML += ``
+            
 
         } else {
             alert ("Resposta Incorreta")
@@ -488,8 +488,8 @@
             m_massa_eprom.innerHTML = "<b>M</b>"
             a_massa.innerHTML = "<b>A</b>"
             s_massa.innerHTML = "<b>S</b>"
-            s_massa.innerHTML = "<b>S</b>"
-            a_massa_flash.innerHTML = "<b>A</b>"
+            s_massa2_flash.innerHTML = "<b>S</b>"
+            a_massa2.innerHTML = "<b>A</b>"
             botao4.style.display = "none"
             botao5.style.display = "block"
             dica.innerHTML = ``
@@ -566,7 +566,7 @@
             c_quadCore_ccpu.innerHTML =  "<b>C</b>"
             o_quadcore.innerHTML =  "<b>O</b>"
             r_quadCore.innerHTML =  "<b>R</b>"
-            e_quadCore.innerHTML =  "<b>E</b>"
+            e_memDeMassa_quadCore.innerHTML =  "<b>E</b>"
 
             botao8.style.display = "none"
             botao9.style.display = "block"
@@ -582,9 +582,9 @@
     function verificar9() {
         var resposta = resposta_input.value
         if (resposta == 'ram') {
-            r_Ram_ram.innerHTML =  "<b>R</b>"
-            a_Ram_quad.innerHTML =  "<b>A</b>"
-            m_Ram_ram.innerHTML =  "<b>M</b>"
+            r_Ram_ram.innerHTML = "<b>R</b>"
+            a_Ram_quad.innerHTML = "<b>A</b>"
+            m_Ram_ram.innerHTML = "<b>M</b>"
             botao9.style.display = "none"
             botao10.style.display = "block"
 
@@ -604,7 +604,7 @@
             c_quadCore_ccpu.innerHTML =  "<b>C</b>"
             c_ccpu.innerHTML = "<b>C</b>"
             p_ccpu_eprom.innerHTML = "<b>P</b>"
-            u_ccpu.innerHTML = "<b>U</b>"
+            u_Ccpu.innerHTML = "<b>U</b>"
             botao10.style.display = "none"
             botao11.style.display = "block"
             dica.innerHTML = ``
@@ -619,7 +619,7 @@
     function verificar11() {
         var resposta = resposta_input.value
         if (resposta == 'eprom') {
-            e_epro.innerHTML = "<b>E</b>"
+            e_eprom.innerHTML = "<b>E</b>"
             p_ccpu_eprom.innerHTML = "<b>P</b>"
             r_eprom.innerHTML = "<b>R</b>"
             o_eprom.innerHTML = "<b>O</b>"
@@ -637,14 +637,72 @@
     }
     function verificar12() {
         var resposta = resposta_input.value
-        if (resposta == 'eprom') {
-            e_epro.innerHTML = "<b>E</b>"
-            p_ccpu_eprom.innerHTML = "<b>P</b>"
-            r_eprom.innerHTML = "<b>R</b>"
-            o_eprom.innerHTML = "<b>O</b>"
-            m_massa_eprom.innerHTML = "<b>M</b>"            
+        if (resposta == 'i5') {
+            i_regist_i5.innerHTML = "<b>I</b>"
+            i_i5.innerHTML = "<b>5</b>"
+
             botao12.style.display = "none"
             botao13.style.display = "block"
+            dica.innerHTML = ``
+            cnt += 1
+            cont.innerHTML = `${cnt}`
+
+        }
+        else{
+            alert ("Resposta Incorreta")
+        }
+    }
+    function verificar13() {
+        var resposta = resposta_input.value
+        if (resposta == 'flash') {
+            f_flash.innerHTML = "<b>F</b>"
+            l_flash.innerHTML = "<b>L</b>"
+            a_flash.innerHTML = "<b>A</b>"
+            s_massa2_flash.innerHTML = "<b>S</b>"
+            h_flash.innerHTML = "<b>H</b>"         
+            botao13.style.display = "none"
+            botao14.style.display = "block"
+            dica.innerHTML = ``
+            cnt += 1
+            cont.innerHTML = `${cnt}`
+
+        }
+        else{
+            alert ("Resposta Incorreta")
+        }
+    }
+    function verificar14() {
+        var resposta = resposta_input.value
+        if (resposta == 'adress bus') {
+            a_adress.innerHTML = "<b>A</b>"
+            r_adress_regist.innerHTML = "<b>R</b>"
+            d_adress.innerHTML = "<b>D</b>"
+            e_adress.innerHTML = "<b>E</b>"
+            s_adress.innerHTML = "<b>S</b>"
+            s_adress2.innerHTML = "<b>S</b>"
+            traco_adress.innerHTML = "<b>-</b>"
+            b_adressBus.innerHTML = "<b>B</b>"
+            u_adressBus.innerHTML = "<b>U</b>"
+            s_adressBus.innerHTML = "<b>S</b>"
+            botao14.style.display = "none"
+            botao15.style.display = "block"
+            dica.innerHTML = ``
+            cnt += 1
+            cont.innerHTML = `${cnt}`
+
+        }
+        else{
+            alert ("Resposta Incorreta")
+        }
+    }
+    function verificar15() {
+        var resposta = resposta_input.value
+        if (resposta == 'cs') {
+            c_cs.innerHTML = "<b>C</b>"
+            s_cs_regist.innerHTML = "<b>S</b>"
+            
+            botao15.style.display = "none"
+            // botao14.style.display = "block"
             dica.innerHTML = ``
             cnt += 1
             cont.innerHTML = `${cnt}`
