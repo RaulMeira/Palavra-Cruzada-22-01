@@ -84,7 +84,7 @@
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
-                <div class="celulavazia"></div>
+                <div id="p_cpu" class="celulacheia"></div>
                 <div class="celulavazia"></div>
                 <div id="e_Regist" class="celulacheia"></div>
                 <div class="celulavazia"></div>
@@ -105,7 +105,7 @@
                 <div class="celulavazia"></div>
                 <div id="u_ula" class="celulacheia"></div>
                 <div class="celulavazia"></div>
-                <div class="celulavazia"></div>
+                <div id="u_cpu" class="celulacheia"></div>
                 <div class="celulavazia"></div>
                 <div id="g_regist" class="celulacheia"></div>
                 <div class="celulavazia"></div>
@@ -146,16 +146,16 @@
                 <div id="a_data" class="celulacheia"></div>
                 <div id="t_data" class="celulacheia"></div>
                 <div id="a_ula_data" class="celulacheia"></div>
-                <div id="traco_data" class="celulacheia">  <b>-</b> </div>
+                <div id="traco_data" class="celulacheia"> <b>-</b> </div>
                 <div id="b_dataBus" class="celulacheia"></div>
                 <div id="u_dataBus" class="celulacheia"></div>
                 <div id="s_dataBus_regist" class="celulacheia"></div>
                 <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
                 <div id="c_quadCore_ccpu" class="celulacheia"></div>
-                <div id="c_ccpu" class="celulacheia"></div>
+                <div class="celulavazia"></div>
                 <div id="p_ccpu_eprom" class="celulacheia"></div>
-                <div id="u_Ccpu" class="celulacheia"></div>
+                <div class="celulavazia"></div>
                 <div class="celulavazia"></div>
                 <div id="f_flash" class="celulacheia"></div>
                 <div class="celulavazia"></div>
@@ -216,7 +216,7 @@
                 <div id="traco_memoria" class="celulacheia"></div>
                 <div id="d_memDeMassa" class="celulacheia"></div>
                 <div id="e_memDeMassa_quadCore" class="celulacheia"></div>
-                <div id="traco_memDeMassa" class="celulacheia">  <b>-</b>  </div>
+                <div id="traco_memDeMassa" class="celulacheia"> <b>-</b> </div>
                 <div id="m_massa_eprom" class="celulacheia"></div>
                 <div id="a_massa" class="celulacheia"></div>
                 <div id="s_massa" class="celulacheia"></div>
@@ -279,7 +279,7 @@
                 <div id="e_adress" class="celulacheia"></div>
                 <div id="s_adress" class="celulacheia"></div>
                 <div id="s_adress2" class="celulacheia"></div>
-                <div id="traco_adress" class="celulacheia"> <b>-</b>  </div>
+                <div id="traco_adress" class="celulacheia"> <b>-</b> </div>
                 <div id="b_adressBus" class="celulacheia"></div>
                 <div id="u_adressBus" class="celulacheia"></div>
                 <div id="s_adressBus" class="celulacheia"></div>
@@ -330,36 +330,39 @@
                 <div class="celulavazia"></div>
             </div>
             <div class="painel" id="painel1">
-                <ul>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Dica #<span id="cont">1</span></h2>
-                            <p id="dica">Processador multinúcleo é o que tem dois ou mais núcleos de processamento no interior de um único chip.
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <input id="resposta_input" type="text" placeholder="Insira aqui">
-                <button onclick="verificar()" id="botao0">Responder</button>
-                <button onclick="verificar1()" id="botao1">Responder</button>
-                <button onclick="verificar2()" id="botao2">Responder</button>
-                <button onclick="verificar3()" id="botao3">Responder</button>
-                <button onclick="verificar4()" id="botao4">Responder</button>
-                <button onclick="verificar5()" id="botao5">Responder</button>
-                <button onclick="verificar6()" id="botao6">Responder</button>
-                <button onclick="verificar7()" id="botao7">Responder</button>
-                <button onclick="verificar8()" id="botao8"> Responder</button>
-                <button onclick="verificar9()" id="botao9">Responder</button>
-                <button onclick="verificar10()" id="botao10">Responder</button>
-                <button onclick="verificar11()" id="botao11">Responder</button>
-                <button onclick="verificar12()" id="botao12">Responder</button>
-                <button onclick="verificar13()" id="botao13">Responder</button>
-                <button onclick="verificar14()" id="botao14">Responder</button>
-                <button onclick="verificar15()" id="botao15">Responder</button>
+                    <ul>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Dica #<span id="cont">1</span></h2>
+                                <p id="dica">Processador multinúcleo é o que tem dois ou mais núcleos de processamento
+                                    no interior de um único chip.
 
-            </div>
-            <div class="painel" id="painel2" style="display: none;">
-                <!-- <ul>
+                                </p>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <input id="resposta_input" type="text" placeholder="Insira aqui">
+                    <button onclick="verificar()" id="botao0">Responder</button>
+                    <button onclick="verificar1()" id="botao1">Responder</button>
+                    <button onclick="verificar2()" id="botao2">Responder</button>
+                    <button onclick="verificar3()" id="botao3">Responder</button>
+                    <button onclick="verificar4()" id="botao4">Responder</button>
+                    <button onclick="verificar5()" id="botao5">Responder</button>
+                    <button onclick="verificar6()" id="botao6">Responder</button>
+                    <button onclick="verificar7()" id="botao7">Responder</button>
+                    <button onclick="verificar8()" id="botao8"> Responder</button>
+                    <button onclick="verificar9()" id="botao9">Responder</button>
+                    <button onclick="verificar10()" id="botao10">Responder</button>
+                    <button onclick="verificar11()" id="botao11">Responder</button>
+                    <button onclick="verificar12()" id="botao12">Responder</button>
+                    <button onclick="verificar13()" id="botao13">Responder</button>
+                    <button onclick="verificar14()" id="botao14">Responder</button>
+                    <button onclick="verificar15()" id="botao15">Responder</button>
+
+                </div>
+                <div class="painel" id="painel2" style="display: none;">
+                    <!-- <ul>
                     <li>
                         <a href="#" contenteditable>
                             <h2>Dica #2</h2>
@@ -367,12 +370,13 @@
                             </p>
                         </a>
                     </li> -->
-                <!-- </ul> -->
-                <!-- <input id="resposta2" type="text" placeholder="Insira aqui"> -->
-                
+                    <!-- </ul> -->
+                    <!-- <input id="resposta2" type="text" placeholder="Insira aqui"> -->
+
+                </div>
             </div>
         </div>
-    </div>
+
 
 </body>
 
@@ -380,7 +384,7 @@
 <script>
     var cnt = 1
     function verificar() {
-       var resposta = resposta_input.value
+        var resposta = resposta_input.value
         if (resposta == 'dualcore') {
             d_dual.innerHTML = "<b>D</b>"
             u_dual.innerHTML = "<b>U</b>"
@@ -396,10 +400,10 @@
             dica.innerHTML = `São usados para armazenar as informações  necessárias para a execução das instruções pela CPU`
             cnt += 1
             cont.innerHTML = `${cnt}`
-            
+
 
         } else {
-            alert ("Resposta Incorreta")
+            alert("Resposta Incorreta")
         }
     }
 
@@ -426,8 +430,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar2() {
@@ -447,8 +451,8 @@
             cnt += 1
             cont.innerHTML = `${cnt}`
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar3() {
@@ -464,8 +468,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
 
     }
@@ -496,10 +500,10 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
-        
+
     }
     function verificar5() {
         var resposta = resposta_input.value
@@ -507,7 +511,7 @@
             d_dma.innerHTML = "<b>D</b>"
             m_memoria_dma.innerHTML = "<b>M</b>"
             a_dma.innerHTML = "<b>A</b>"
-           
+
             botao5.style.display = "none"
             botao6.style.display = "block"
             dica.innerHTML = `Um tipo de memória que permite apenas a leitura`
@@ -515,10 +519,10 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
-        
+
     }
     function verificar6() {
         var resposta = resposta_input.value
@@ -533,15 +537,15 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar7() {
         var resposta = resposta_input.value
         if (resposta == 'i7') {
             i_memoria_i7.innerHTML = "<b>I</b>"
-            i7_i7.innerHTML =  "<b>7</b>"
+            i7_i7.innerHTML = "<b>7</b>"
 
             botao7.style.display = "none"
             botao8.style.display = "block"
@@ -550,22 +554,22 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar8() {
         var resposta = resposta_input.value
         if (resposta == 'quad core') {
             q_quad.innerHTML = "<b>Q</b>"
-            u_quad.innerHTML =  "<b>U</b>"
-            a_Ram_quad.innerHTML =  "<b>A</b>"
-            d_quad.innerHTML =  "<b>D</b>"
-            traco_quadcore.innerHTML =  "<b>-</b>"
-            c_quadCore_ccpu.innerHTML =  "<b>C</b>"
-            o_quadcore.innerHTML =  "<b>O</b>"
-            r_quadCore.innerHTML =  "<b>R</b>"
-            e_memDeMassa_quadCore.innerHTML =  "<b>E</b>"
+            u_quad.innerHTML = "<b>U</b>"
+            a_Ram_quad.innerHTML = "<b>A</b>"
+            d_quad.innerHTML = "<b>D</b>"
+            traco_quadcore.innerHTML = "<b>-</b>"
+            c_quadCore_ccpu.innerHTML = "<b>C</b>"
+            o_quadcore.innerHTML = "<b>O</b>"
+            r_quadCore.innerHTML = "<b>R</b>"
+            e_memDeMassa_quadCore.innerHTML = "<b>E</b>"
 
             botao8.style.display = "none"
             botao9.style.display = "block"
@@ -574,8 +578,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar9() {
@@ -592,18 +596,17 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
-   
+
     function verificar10() {
         var resposta = resposta_input.value
-        if (resposta == 'ccpu') {
-            c_quadCore_ccpu.innerHTML =  "<b>C</b>"
-            c_ccpu.innerHTML = "<b>C</b>"
-            p_ccpu_eprom.innerHTML = "<b>P</b>"
-            u_Ccpu.innerHTML = "<b>U</b>"
+        if (resposta == 'cpu') {
+            c_dual.innerHTML = "<b>C</b>"
+            p_cpu.innerHTML = "<b>P</b>"
+            u_cpu.innerHTML = "<b>U</b>"
             botao10.style.display = "none"
             botao11.style.display = "block"
             dica.innerHTML = `Um tipo de chip de memória de computador que mantém seus dados quando a energia é desligada.`
@@ -611,8 +614,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar11() {
@@ -622,7 +625,7 @@
             p_ccpu_eprom.innerHTML = "<b>P</b>"
             r_eprom.innerHTML = "<b>R</b>"
             o_eprom.innerHTML = "<b>O</b>"
-            m_massa_eprom.innerHTML = "<b>M</b>"            
+            m_massa_eprom.innerHTML = "<b>M</b>"
             botao11.style.display = "none"
             botao12.style.display = "block"
             dica.innerHTML = `Processador com 4 núcleos intel`
@@ -630,8 +633,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar12() {
@@ -647,8 +650,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar13() {
@@ -658,7 +661,7 @@
             l_flash.innerHTML = "<b>L</b>"
             a_flash.innerHTML = "<b>A</b>"
             s_massa2_flash.innerHTML = "<b>S</b>"
-            h_flash.innerHTML = "<b>H</b>"         
+            h_flash.innerHTML = "<b>H</b>"
             botao13.style.display = "none"
             botao14.style.display = "block"
             dica.innerHTML = `uma arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física`
@@ -666,8 +669,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar14() {
@@ -690,8 +693,8 @@
             cont.innerHTML = `${cnt}`
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
     }
     function verificar15() {
@@ -699,17 +702,18 @@
         if (resposta == 'cs') {
             c_cs.innerHTML = "<b>C</b>"
             s_cs_regist.innerHTML = "<b>S</b>"
-            
+
             botao15.style.display = "none"
             // botao14.style.display = "block"
-            dica.innerHTML = ``
-            cnt += 1
-            cont.innerHTML = `${cnt}`
+            alert ("PARABENS!!!! VOCE GANHOU O JOGO!!")
+            for
 
         }
-        else{
-            alert ("Resposta Incorreta")
+        else {
+            alert("Resposta Incorreta")
         }
+        
+        
     }
-    
+
 </script>

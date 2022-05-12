@@ -49,6 +49,7 @@ margin-top: 1cm;
         inset -20px -20px 17px #f4f4f4;
 }
 
+
 .painel {
     align-items: center;
     flex-direction: column;
@@ -107,6 +108,7 @@ h2 {
   }
 
   button {
+      
       margin-top: 15vh;
       width: 30%;
       height: 20px;
@@ -114,10 +116,12 @@ h2 {
       border: solid #999 1px;
       cursor: pointer;
       border-radius: 4px;
-      
     }
     #botao1, #botao2, #botao3, #botao4, #botao5, #botao6, #botao7, #botao8, #botao9, #botao10, #botao11, #botao12, #botao13, #botao14, #botao15 { 
       display: none;
       margin: auto;
+  
+  }
+  .venceu {
   
   }
