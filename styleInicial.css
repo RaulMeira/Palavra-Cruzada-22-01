@@ -1,13 +1,17 @@
 body {
-    background-color: aqua;
+    
     margin: 0;
 }
 
 .conteiner {
+    margin-top: -10vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(to bottom, #4b79a1, #283e51);;
+    height: 90vh;
+   
 
 }
 
@@ -15,6 +19,7 @@ body {
     font-size: 10vh;
     display: flex;
     justify-content: center;
+    font-family: 'Reenie Beanie';
 
 }
 
@@ -36,11 +41,12 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 50vw;
-    background-color: blueviolet;
+    background-color: #333333;
     height: 40vh;
     padding: 2vh 2vw;
     border: 1vh black solid;
     border-radius: 5vh;
+    color: white;
 }
 
 .card .escrita {
@@ -48,10 +54,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 7vh;
+    color: white;
 }
 
 .escrita p {
     font-size: 4vh;
+    margin-top: 1vh;
     margin-bottom: 2vh;
 }
 
@@ -71,7 +79,7 @@ body {
     width: 30vw;
     height: 40vh;
     padding: 2vh 2vw;
-    background-color: blue;
+    background-color: #333333;
     margin-left: 5vw;
     border: 1vh black solid;
     border-radius: 5vh;
@@ -79,16 +87,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 
 }
 
 .start p {
-    font-size: 6.5vh;
+    font-size: 6vh;
+    margin-top: -7.5vh;
 }
 
 .button {
     border-radius: 1vh;
-    background-color: rgb(10, 10, 12);
+    background-color: #0a0a0c;
     border: none;
     color: white;
     text-align: center;
@@ -103,6 +113,7 @@ body {
 .button span {
     position: relative;
     transition: 0.5s;
+    color: white;
 }
 
 .button span:after {
@@ -110,7 +121,7 @@ body {
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -8vh;
+    right: -5vh;
     transition: 0.8s;
 }
 
@@ -127,6 +138,11 @@ a {
     text-decoration: none;
 }
 
-footer{
+.rodape{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 4vh;
     
 }
